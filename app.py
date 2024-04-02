@@ -15,6 +15,7 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, SnowballStemmer,LancasterStemmer,WordNetLemmatizer
 from wordcloud import WordCloud
 import pickle
+nltk.download('stopwords')
 
 data=pd.read_csv('fakenews.csv')
 fv=data.iloc[:,0]
