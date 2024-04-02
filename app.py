@@ -171,7 +171,7 @@ if(radio_button=='Model selection'):
     st.write("Among the six models developed using different algorithms and vectorizers, KNN with TF-IDF vectorizer stands out as the most effective in classifying news articles as fake or real.")
 
 model=pickle.load(open('KNNtfidf.pkl','rb'))
-vect=pickle.load(open('vectorizer.pkl",'rb'))
+vect=pickle.load(open('vectorizer.pkl','rb'))
 
 
 if(radio_button=='Prediction'):
