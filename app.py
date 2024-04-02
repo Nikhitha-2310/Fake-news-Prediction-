@@ -16,7 +16,7 @@ from nltk.stem import PorterStemmer, SnowballStemmer,LancasterStemmer,WordNetLem
 from wordcloud import WordCloud
 import pickle
 
-data=pd.read_csv(r"C:\Users\LENOVO\OneDrive\Desktop\fakenews.csv")
+data=pd.read_csv('fakenews.csv')
 fv=data.iloc[:,0]
 cv=data.iloc[:,-1]
 x_train,x_test,y_train,y_test=train_test_split(fv,cv,test_size=0.2,random_state=1,stratify=cv)
@@ -170,8 +170,8 @@ if(radio_button=='Model selection'):
     st.subheader("Selecting the best model")
     st.write("Among the six models developed using different algorithms and vectorizers, KNN with TF-IDF vectorizer stands out as the most effective in classifying news articles as fake or real.")
 
-model=pickle.load(open(r'C:\Users\LENOVO\Downloads\fakenews_project\KNNtfidf.pkl','rb'))
-vect=pickle.load(open(r"C:\Users\LENOVO\Downloads\fakenews_project\vectorizer.pkl",'rb'))
+model=pickle.load(open('KNNtfidf.pkl','rb'))
+vect=pickle.load(open('vectorizer.pkl",'rb'))
 
 
 if(radio_button=='Prediction'):
