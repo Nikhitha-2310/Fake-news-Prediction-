@@ -10,6 +10,7 @@ from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import f1_score,accuracy_score,classification_report,confusion_matrix,log_loss
+import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer, SnowballStemmer,LancasterStemmer,WordNetLemmatizer
